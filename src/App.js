@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
+import Plus10 from './components/Plus10';
 import './App.css';
 
 function App() {
+  const [showPlus10, setShowPlus10] = React.useState(false);
+
+  function onShowPlus10(value){
+    setShowPlus10(value);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!showPlus10 && <h1 className='App--title'>BSCS 3A Treasure</h1>}
+      <div className='buttons-events'>
+        {!showPlus10 && <button className='btn-events' onClick={()=>onShowPlus10(true)}>Arkila sang Bible Baptist Church</button>}
+      </div>
+      {showPlus10 && <Plus10 showPlus10 = {showPlus10} onShowPlus10={onShowPlus10}/>}
     </div>
   );
 }
