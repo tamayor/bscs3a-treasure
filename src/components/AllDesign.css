@@ -2,11 +2,29 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    
+}
+.showTshirtSize{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .name-paid{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+.list-join{
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 2px solid rgba(109, 187, 255, 0.5);
+}
+.list-wont-join{
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 109, 109, 0.5);
 }
 li{
     list-style: decimal;
@@ -15,7 +33,17 @@ li{
     border-radius: 5px;
     border: 1px solid rgba(240, 248, 255, 0.2);
 }
+li::marker{
+    color: rgba(240, 248, 255, 0.5);
+}
+.li{
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid rgba(240, 248, 255, 0.2);
+}
 .buttons{
+    z-index: 2;
     width: 100vw;
     height: 80px;
     position: fixed;
@@ -43,10 +71,66 @@ li{
     transition: filter .5s ease;
     filter: brightness(2);
 }
+.buttons-sizes{
+    z-index: 2;
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+    overflow-y: auto;
+}
+.button-size{
+    width: 50px;
+    color: rgb(203, 215, 225);
+    margin: 10px;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(20, 20, 20);
+    outline: none;
+    background-color: rgb(32, 32, 32);
+}
+.button-size:hover{
+    transition: filter .5s ease, border .3s ease;
+    border: 1px solid rgb(31, 31, 31);
+    filter: brightness(1.4);
+}
+
+
+.total-amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+}
+.total-amount h3{
+    letter-spacing: .5px;
+}
 .list{
-    margin-top: 80px;
+    margin-top: 70px;
+    overflow-y: auto;
     padding: 20px;
     color: rgb(203, 215, 225);
+}
+.list-with-size{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    height: 80vh;
+    overflow-y: auto;
+    padding: 20px;
+    color: rgb(203, 215, 225);
+}
+.list-number{
+    z-index: 0;
+    position: relative;
+    opacity: .5;
 }
 .bg{
     transition: background-color 1s ease;

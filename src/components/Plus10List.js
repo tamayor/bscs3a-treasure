@@ -108,12 +108,6 @@ const Plus10List = [
     "paid": 120
   },
   {
-    "name": "IBAÑEZ, RENZ ANDREI MONES",
-    "sex": "male",
-    "willJoin": false,
-    "paid": 0
-  },
-  {
     "name": "INOCENCIO, DANIEL MACAYAN",
     "sex": "male",
     "willJoin": true,

@@ -1,6 +1,6 @@
 *{
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Open Sans', sans-serif;
 }
 body{
@@ -13,13 +13,13 @@ body{
   justify-content: center;
 }
 .btn-events{  
-  width: max-content;
-    color: rgb(203, 215, 225);
-    margin: 10px;
-    font-size: 15px;
-    padding: 10px;
-    border-radius: 5px;
-  background-color: rgb(31, 31, 31);
+  width: 80%;
+  color: rgb(203, 215, 225);
+  margin: 10px;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(25, 25, 25);
   border: none;
   outline: none;
 }
