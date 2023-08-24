@@ -46,7 +46,9 @@ function Plus10( { showPlus10 , onShowPlus10 } ){
         renderedInfo = Plus10List.filter(item => item.willJoin).map((item, index)=>{
             return(
                 <li key={index}>
-                    {item.paid > 0 && <span>{item.name} paid {item.paid}</span>}
+                    <div>
+                    {item.paid > 0 && <span className="name-paid"><span>{item.name}</span> <span>{item.paid}</span></span>}
+                    </div>
                 </li>
             )
         });
