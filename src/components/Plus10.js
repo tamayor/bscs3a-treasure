@@ -104,8 +104,19 @@ function Plus10( { showPlus10 , onShowPlus10 } ){
         <section className="Plus10">
             {showPlus10 && (
                 <div>
+                    
+                        <div className="event-info">
+                            <span><strong>WHO</strong> BSCS 3-A</span><br/>
+                            <span><strong>WHAT</strong> ICT 122 - Church Anniversary </span><br/>
+                            <span><strong>WHEN</strong> Sunday, August 27, 2023, 7:30AM </span><br/>
+                            <span><strong>WHERE</strong> Bible Baptist Church, Miag-ao, Iloilo </span><br/>
+                            <span><strong>MEET-UP</strong> Mohon Terminal </span><br/>
+                            <span><strong>DRESS CODE</strong> Sunday's Best or Formal </span>
+                        </div>
+        
                     <div className="buttons">
                     <button className="button bg" onClick={() => onShowPlus10(false)}>Close</button>
+                    <button className="button bg" onClick={() => onShowPlus10("event info")}>Event Info</button>
                     <button className="button bg-green" onClick={()=>setSort("will join")}>will join</button>
                     <button className="button bg-red" onClick={()=>setSort("will not join")}>won't join</button>
                     <button className="button bg-green" onClick={()=>setSort("paid")}>paid</button>
