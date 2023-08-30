@@ -1,0 +1,46 @@
+label, .label{
+    color: rgb(203, 215, 225);
+    text-align: center;
+}
+.form-container form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.form-options{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+.form-options div{
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+}
+input, select, button{
+    color: rgb(203, 215, 225);
+    background-color: rgb(32, 32, 32);
+    outline: none;
+    border: 1px solid rgb(32, 32, 32);
+    margin: 10px;
+    transition: filter .5s ease;
+}
+button:hover{
+    cursor: pointer;
+    border: 1px solid rgb(59, 59, 59);
+    filter: brightness(1.2);
+    transition: filter .5s ease;
+}
+
+
+
+form input, form select, form button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
