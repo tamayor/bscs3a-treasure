@@ -22,6 +22,9 @@ body{
   background-color: rgb(39, 39, 39);
   border: 2px dotted rgba(145, 145, 145, 0.5);
 }
+.active-event:hover{
+  border: 2px dotted rgba(145, 145, 145, 0);
+}
 
 .btn-events{  
   display: flex;
@@ -37,6 +40,10 @@ body{
   background-color: rgb(25, 25, 25);
   border: none;
   outline: none;
+  border: 2px dotted rgba(145, 145, 145, 0);
+}
+.btn-events:hover{
+  border: 2px dotted rgba(145, 145, 145, 0);
 }
 .tshirt-size-buttons{
   display: flex;
