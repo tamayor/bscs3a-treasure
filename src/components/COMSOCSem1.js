@@ -97,7 +97,7 @@ function Plus10( { showCOMSOCSem1 , onShowCOMSOCSem1 } ){
                         <span><strong>WHAT</strong>COMSOC First Semester Membership Fee</span><br/>
                         <span><strong>PAY</strong>Divine Joy Ermoso || Elly Mar Tamayor</span><br/>
                         <span><strong>AMOUNT</strong>30 pesos</span><br/>
-                        <span><strong>DEADLINE</strong>August 30, 2023</span><br/>
+                        <span><strong>DEADLINE</strong>September 1, 2023</span><br/>
                     </div>
                     <div className="buttons">
                     <button className="button bg" onClick={() => onShowCOMSOCSem1(false)}>Close</button>
