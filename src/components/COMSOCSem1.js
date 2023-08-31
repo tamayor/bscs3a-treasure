@@ -52,8 +52,8 @@ function Plus10( { showCOMSOCSem1 , onShowCOMSOCSem1 } ){
         default : 
         renderedInfo = COMSOCSem1list.map((item,index) => {
             return(
-                <li key={index} className={item.willJoin ? "list-join" : "list-wont-join"}>
-                    <span>{item.name}</span><span>{item.willJoin ? " has paid" : " hasn't paid"}</span>
+                <li key={index} className={item.paid ? "list-join" : "list-wont-join"}>
+                    <span>{item.name}</span><span>{item.paid ? " has paid" : " hasn't paid"}</span>
                 </li>
             )
         })

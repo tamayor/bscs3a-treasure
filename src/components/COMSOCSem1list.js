@@ -26,7 +26,6 @@ const COMSOCSem1List = [
   {"name": "PACLIBAR, MARK CJ CEBALLOS","sex": "male","paid": 30},
   {"name": "PASOL, JOHN PATRICK PENETRANTE","sex": "male","paid": 30},/* paid by me*/
   {"name": "PILLADO, MARK GABRIEL M.","sex": "male","paid": 30},
-  {"name": "POMPERADA, CEZAR RYAN ORTEGA","sex": "male","paid": 0},
   {"name": "PRANDAS, MICAH ANDIANO","sex": "male","paid": 30},
   {"name": "SABADO, JOHN CHAVIE ECONG","sex": "male","paid": 0},
   {"name": "SALONGCONG, LEAH GRACE GARDE","sex": "female","paid": 30},/*gcash*/
