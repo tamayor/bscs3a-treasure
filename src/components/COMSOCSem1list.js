@@ -39,7 +39,7 @@ const COMSOCSem1List = [
   {"name": "TAMAYOR, ELLY MAR ESTRIBOR","sex": "male","paid": 0},
   {"name": "UNTAL, LEANDRO JOSE ENDRIGA","sex": "male","paid": 30},
   {"name": "TORRES, SOPHIE ORESCO","sex": "female","paid": 0},
-  {"name": "VERDUGO, ABEGAIL VANJO GONZAGA","sex": "female","paid": 0},
+  {"name": "VERDUGO, ABEGAIL VANJO GONZAGA","sex": "female","paid": 30},
   {"name": "VILLALUZ, BEA BIANCA","sex": "female","paid": 30}
 ];
 
