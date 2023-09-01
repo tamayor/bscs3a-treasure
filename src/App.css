@@ -3,6 +3,9 @@
   font-size: 12px;
   font-family: 'Open Sans', sans-serif;
 }
+html{
+  width: 100vw;
+}
 body{
   background-color: black;
 }

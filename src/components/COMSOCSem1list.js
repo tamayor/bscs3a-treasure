@@ -1,6 +1,7 @@
 const COMSOCSem1List = [
   {"name": "ALLEGROSO, ROSE JOANNA","sex": "female","paid": 30},
-  {"name": "BRAZA, JOEFY JHADE DANAO","sex": "male","paid": 0},
+  {"name": "BRAZA, JOEFY JHADE DANAO","sex": "male","paid": 30},
+  {"name": "BIENVENIDO GIGANTE BIONAT JR. III","sex": "male","paid": 30},
   {"name": "BUENAFE, SHAN KIAN RAFIO","sex": "male","paid": 30},
   {"name": "CADUNGOG, MYKA JOYCE CANSANCIO","sex": "female","paid": 30},
   {"name": "CAMAG, KHIANE BRICKZ CABRISTANTE","sex": "female","paid": 30},
@@ -17,7 +18,7 @@ const COMSOCSem1List = [
   {"name": "GRANDIA, JOHN EMMANUEL","sex": "male","paid": 30},
   {"name": "INOCENCIO, DANIEL MACAYAN","sex": "male","paid": 30},
   {"name": "JABICAN, JOHN COOLYN RUBIO","sex": "male","paid": 30},
-  {"name": "JARDIN, JOHN MARK SIASON","sex": "male","paid": 0},
+  {"name": "JARDIN, JOHN MARK SIASON","sex": "male","paid": 30},
   {"name": "LINDAYAO, EDJAY","sex": "male","paid": 30},
   {"name": "LOPEZ, PETER GABRIEL REFENDOR","sex": "male","paid": 30},
   {"name": "LLAVE, RHEA MAE ROBLES","sex": "female","paid": 30},/*gcash*/
@@ -27,7 +28,7 @@ const COMSOCSem1List = [
   {"name": "PASOL, JOHN PATRICK PENETRANTE","sex": "male","paid": 30},/* paid by me*/
   {"name": "PILLADO, MARK GABRIEL M.","sex": "male","paid": 30},
   {"name": "PRANDAS, MICAH ANDIANO","sex": "male","paid": 30},
-  {"name": "SABADO, JOHN CHAVIE ECONG","sex": "male","paid": 0},
+  {"name": "SABADO, JOHN CHAVIE ECONG","sex": "male","paid": 30},
   {"name": "SALONGCONG, LEAH GRACE GARDE","sex": "female","paid": 30},/*gcash*/
   {"name": "STA. CRUZ, EULA GRACE GAYOLA","sex": "female","paid": 30},
   {"name": "SAUZA, JOHN LLYCO MALNEGRO","sex": "male","paid": 30},
@@ -35,7 +36,7 @@ const COMSOCSem1List = [
   {"name": "SOTITO, SEANRON FACTON","sex": "male","paid": 30},
   {"name": "TABANG, EDWARD VON JOSEF BRAZA","sex": "male","paid": 30},
   {"name": "TALAMAN, KATHERINE TABAT","sex": "female","paid": 30},/*gcash*/
-  {"name": "TAMAYOR, ELLY MAR ESTRIBOR","sex": "male","paid": 0},
+  {"name": "TAMAYOR, ELLY MAR ESTRIBOR","sex": "male","paid": 30},
   {"name": "UNTAL, LEANDRO JOSE ENDRIGA","sex": "male","paid": 30},
   {"name": "TORRES, SOPHIE ORESCO","sex": "female","paid": 30},
   {"name": "VERDUGO, ABEGAIL VANJO GONZAGA","sex": "female","paid": 30},
