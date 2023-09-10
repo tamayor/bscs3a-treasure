@@ -2,7 +2,7 @@ import React from "react";
 import COMSOCSem1list from "./CSLanyardList";
 import './AllDesign.css';
 
-function Plus10( { showCOMSOCSem1 , onShowCOMSOCSem1 } ){
+export default function CSLanyard( { showCSLanyard , onShowCSLanyard } ){
     const [sort, setSort] = React.useState('');
     
     let renderedInfo;
@@ -11,7 +11,7 @@ function Plus10( { showCOMSOCSem1 , onShowCOMSOCSem1 } ){
             renderedInfo = COMSOCSem1list.filter(item => item.sex === sort).map((item, index)=>{
                 return(
                     <li key={index} className={item.paid ? "list-join" : "list-wont-join"}>
-                        <span>{item.name}</span><span>{item.paid ? " has paid" : " hasn't paid"}</span>
+                        <span>{item.name}</span><span>{item.willBuy ? " will buy" : " will not buy"}</span>
                     </li>
                 )
             });
@@ -20,7 +20,7 @@ function Plus10( { showCOMSOCSem1 , onShowCOMSOCSem1 } ){
         renderedInfo = COMSOCSem1list.filter(item => item.sex === sort).map((item, index)=>{
             return(
                 <li key={index} className={item.paid ? "list-join" : "list-wont-join"}>
-                    <span>{item.name}</span><span>{item.paid ? " has paid" : " hasn't paid"}</span>
+                    <span>{item.name}</span><span>{item.willBuy ? " will buy" : " will not buy"}</span>
                 </li>
             )
         });
@@ -40,10 +40,34 @@ function Plus10( { showCOMSOCSem1 , onShowCOMSOCSem1 } ){
         case "not paid":
         renderedInfo = COMSOCSem1list.filter(item => item.name).map((item, index)=>{
             return(
+              
+                    (item.paid === 0 && item.willBuy ) && 
+                    (<div className="name-paid"><div>
+                        <label className="list-number">{index+1}.  </label><span>{item.name}</span></div><span>{item.paid}</span>
+                    </div>)
+                
+            )
+        });
+        break;
+        case "will buy":
+        renderedInfo = COMSOCSem1list.filter(item => item.willBuy).map((item, index)=>{
+            return(
                 <div key={index} className="li">
-                    {item.paid === 0 && 
+                    {item.name && 
                     <div className="name-paid"><div>
                         <label className="list-number">{index+1}.  </label><span>{item.name}</span></div><span>{item.paid}</span>
+                    </div>}
+                </div>
+            )
+        });
+        break;
+        case "will not buy":
+        renderedInfo = COMSOCSem1list.filter(item => !item.willBuy).map((item, index)=>{
+            return(
+                <div key={index} className="li">
+                    {item.name && 
+                    <div className="name-paid"><div>
+                        <label className="list-number">{index+1}.  </label><span>{item.name}</span></div>
                     </div>}
                 </div>
             )
@@ -53,7 +77,7 @@ function Plus10( { showCOMSOCSem1 , onShowCOMSOCSem1 } ){
         renderedInfo = COMSOCSem1list.map((item,index) => {
             return(
                 <li key={index} className={item.paid ? "list-join" : "list-wont-join"}>
-                    <span>{item.name}</span><span>{item.paid ? " has paid" : " hasn't paid"}</span>
+                    <span>{item.name}</span><span>{item.willBuy ? " will buy " : " will not buy "}</span>
                 </li>
             )
         })
@@ -90,17 +114,13 @@ function Plus10( { showCOMSOCSem1 , onShowCOMSOCSem1 } ){
     
     return(
         <section className="Plus10">
-            {showCOMSOCSem1 && (
+            {showCSLanyard && (
                 <div>       
                     
-                    <div className="event-info">
-                        <span><strong>WHAT</strong>COMSOC First Semester Membership Fee</span><br/>
-                        <span><strong>PAY</strong>Divine Joy Ermoso || Elly Mar Tamayor</span><br/>
-                        <span><strong>AMOUNT</strong>30 pesos</span><br/>
-                        <span><strong>DEADLINE</strong>September 1, 2023</span><br/>
-                    </div>
                     <div className="buttons">
-                    <button className="button bg" onClick={() => onShowCOMSOCSem1(false)}>Close</button>
+                    <button className="button bg" onClick={() => onShowCSLanyard(false)}>Close</button>
+                    <button className="button bg-green" onClick={()=>setSort("will buy")}>will buy</button>
+                    <button className="button bg-red" onClick={()=>setSort("will not buy")}>won't buy</button>
                     <button className="button bg-green" onClick={()=>setSort("paid")}>paid</button>
                     <button className="button bg-red" onClick={()=>setSort("not paid")}>not paid</button>
                     <button className="button bg" onClick={()=>setSort("")}>Class List</button>
@@ -116,4 +136,3 @@ function Plus10( { showCOMSOCSem1 , onShowCOMSOCSem1 } ){
         </section>
     )
 }
-export default Plus10;
